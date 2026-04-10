@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquinsa</title>
+
+    <link rel="icon" type="image/png" href="assets/logo-cliente-1.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    
+
+    
+
+    <style>
+
+        :root {
+            --color-primario: #ee8024; /* Azul por defecto */
+            --color-secundario: #1f2937; /* Gris oscuro */
+            --color-acento: #f3f4f6; /* Gris claro */
+        }
+
+        .bg-primario { background-color: var(--color-primario); }
+        .text-primario { color: var(--color-primario); }
+        .border-primario { border-color: var(--color-primario); }
+        
+        .btn-principal {
+            background-color: var(--color-primario);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-principal:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        h1, h2, h3 { font-family: 'Oswald', sans-serif !important; text-transform: uppercase; letter-spacing: 0.05em; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased font-sans">
+
+    <header class="fixed w-full bg-gray-900/95 backdrop-blur-md z-50 shadow-2xl border-b-4 border-orange-600">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+        <a href="index.html" class="flex items-center">
+            <img src="assets/logo-cliente-1.png" alt="Logo Maquinsa" class="h-12 w-auto">
+        </a>
+
+        <nav class="hidden md:flex items-center gap-10 text-xs font-extrabold text-white uppercase tracking-[0.2em]">
+            <a href="index.html" class="hover:text-orange-500 transition">Inicio</a>
+            <a href="servicios.html" class="hover:text-orange-500 transition">Equipos</a>
+            <a href="nosotros.html" class="hover:text-orange-500 transition">Trayectoria</a>
+            <a href="ubicacion.html" class="bg-orange-600 text-white px-6 py-3 rounded-sm hover:bg-orange-700 transition flex items-center gap-2">
+                <i data-lucide="truck" class="w-4 h-4"></i> Cobertura
+            </a>
+        </nav>
+
+        <button id="btn-menu" class="md:hidden text-white p-2">
+            <i data-lucide="menu" class="w-8 h-8"></i>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800 absolute w-full left-0 shadow-2xl">
+        <div class="flex flex-col p-8 gap-6 font-bold text-white uppercase tracking-widest text-sm">
+            <a href="index.html" class="hover:text-orange-500">Inicio</a>
+            <a href="servicios.html" class="hover:text-orange-500">Equipos</a>
+            <a href="nosotros.html" class="hover:text-orange-500">Trayectoria</a>
+            <a href="ubicacion.html" class="text-orange-500">Cobertura</a>
+        </div>
+    </div>
+</header>
+
+    <section class="py-24 bg-gray-50 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+        <div data-aos="fade-right">
+            <h2 class="text-5xl font-black text-gray-950 leading-none mb-8">FUERZA Y EXPERIENCIA <br><span class="text-orange-600">EN CADA PROYECTO</span></h2>
+            <p class="text-gray-700 text-lg leading-relaxed mb-6 italic border-l-4 border-orange-600 pl-6">
+                En Maquinsa entendemos que el tiempo en obra es oro. Por eso, nuestra filosofía se basa en la puntualidad y el estado óptimo de nuestros equipos.
+            </p>
+            <p class="text-gray-600 mb-8">
+                Desde Saltillo, Coahuila, servimos a la industria de la construcción con un enfoque en la seguridad operativa y el cumplimiento de estándares técnicos exigentes.
+            </p>
+            </div>
+        <div class="relative" data-aos="zoom-in">
+            <img src="assets/maquinsa_obra.jpg" alt="Maquinsa en acción" class="rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all">
+            <div class="absolute -bottom-6 -left-6 bg-orange-600 text-white p-8">
+                <p class="text-5xl font-black italic">5+</p>
+                <p class="text-xs font-bold uppercase tracking-widest">Años de Servicio</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-white overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 text-center mb-16">
+        <h2 class="text-4xl font-black text-gray-950 uppercase italic">Flujo de <span class="text-orange-600">Operación</span></h2>
+        <p class="text-gray-600 mt-2">Logística coordinada desde la solicitud hasta la entrega en sitio.</p>
+    </div>
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-4">
+        <div class="relative p-8 bg-gray-50 group hover:bg-orange-600 transition-all duration-500" data-aos="fade-up">
+            <span class="text-6xl font-black text-gray-200 absolute top-2 right-4 group-hover:text-orange-500 transition-colors">01</span>
+            <i data-lucide="clipboard-list" class="w-8 h-8 text-orange-600 mb-6 group-hover:text-white"></i>
+            <h4 class="font-bold text-gray-900 group-hover:text-white uppercase mb-2">Diagnóstico</h4>
+            <p class="text-gray-500 text-xs group-hover:text-orange-100">Evaluamos las necesidades de carga o equipo de su proyecto.</p>
+        </div>
+        
+        <div class="relative p-8 bg-gray-50 group hover:bg-orange-600 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+            <span class="text-6xl font-black text-gray-200 absolute top-2 right-4 group-hover:text-orange-500 transition-colors">02</span>
+            <i data-lucide="truck" class="w-8 h-8 text-orange-600 mb-6 group-hover:text-white"></i>
+            <h4 class="font-bold text-gray-900 group-hover:text-white uppercase mb-2">Asignación</h4>
+            <p class="text-gray-500 text-xs group-hover:text-orange-100">Selección de unidades y operadores especializados.</p>
+        </div>
+<div class="relative p-8 bg-gray-50 group hover:bg-orange-600 transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+    <span class="text-6xl font-black text-gray-200 absolute top-2 right-4 group-hover:text-orange-500 transition-colors">03</span>
+    <i data-lucide="drill" class="w-8 h-8 text-orange-600 mb-6 group-hover:text-white"></i>
+    <h4 class="font-bold text-gray-900 group-hover:text-white uppercase mb-2">Ejecución</h4>
+    <p class="text-gray-500 text-xs group-hover:text-orange-100">Despliegue operativo en sitio bajo estrictos protocolos de seguridad y eficiencia.</p>
+</div>
+
+<div class="relative p-8 bg-gray-50 group hover:bg-orange-600 transition-all duration-500" data-aos="fade-up" data-aos-delay="300">
+    <span class="text-6xl font-black text-gray-200 absolute top-2 right-4 group-hover:text-orange-500 transition-colors">04</span>
+    <i data-lucide="check-square" class="w-8 h-8 text-orange-600 mb-6 group-hover:text-white"></i>
+    <h4 class="font-bold text-gray-900 group-hover:text-white uppercase mb-2">Finalización</h4>
+    <p class="text-gray-500 text-xs group-hover:text-orange-100">Entrega de resultados, retiro de equipo y reporte final de cumplimiento.</p>
+</div>
+        </div>
+        
+</section>
+
+<div class="bg-gray-900 py-10 border-y-8 border-orange-600 flex flex-wrap justify-center gap-12 text-white italic font-black text-sm uppercase tracking-[0.3em]">
+    <div class="flex items-center gap-3"><i data-lucide="shield-check" class="text-orange-600"></i> Operadores Certificados</div>
+    <div class="flex items-center gap-3"><i data-lucide="alert-triangle" class="text-orange-600"></i> Tolerancia Cero Riesgos</div>
+    <div class="flex items-center gap-3"><i data-lucide="hard-hat" class="text-orange-600"></i> Equipo en Regla</div>
+</div>
+
+
+
+    <footer class="py-8 bg-orange-100 text-gray-900 text-center text-sm">
+        &copy; Todos los derechos reservados para Maquinsa. 2026
+    </footer>
+
+    <a href="https://wa.me/528444649290" target="_blank" 
+   class="fixed bottom-6 right-6 bg-orange-600 text-white px-6 py-4 rounded-xl shadow-[0_10px_20px_rgba(238,128,36,0.3)] hover:bg-orange-700 hover:-translate-y-2 transition-all duration-300 z-[100] flex items-center gap-3 border-b-4 border-orange-800 group">
+    
+    <div class="relative">
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+        <span class="absolute -top-1 -right-1 w-2 h-2 bg-white rounded-full animate-ping"></span>
+    </div>
+    
+    <span class="font-bold uppercase tracking-wider text-xs">Solicitar Cotización</span>
+</a>
+
+    <script>
+        lucide.createIcons();
+
+        // Lógica del Menú Móvil
+    const btnMenu = document.getElementById('btn-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    btnMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    
+    const links = mobileMenu.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Duración de la animación en milisegundos (1 segundo)
+    once: true,     // La animación solo ocurre una vez al bajar
+    offset: 100     // Cuántos píxeles antes de que aparezca el elemento debe activarse
+  });
+</script>
+</body>
+</html>
