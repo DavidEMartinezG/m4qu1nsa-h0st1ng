@@ -48,11 +48,21 @@
 </head>
 <body class="text-gray-800 antialiased font-sans">
 
-    <header class="fixed w-full bg-gray-900/95 backdrop-blur-md z-50 shadow-2xl border-b-4 border-orange-600">
+<header class="fixed w-full bg-gray-700/60 backdrop-blur-md z-50 shadow-2xl border-b-4 border-orange-600">
     <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-        <a href="index.html" class="flex items-center">
-            <img src="assets/logo-cliente-1.png" alt="Logo Maquinsa" class="h-12 w-auto">
-        </a>
+        
+        <div class="flex items-center gap-4">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logo-cliente-1.png" alt="Logo Maquinsa" class="h-12 w-auto">
+            </a>
+            
+            <div class="hidden sm:block h-8 w-[2px] bg-orange-600/50"></div>
+            
+            <p class="hidden lg:block text-[11px] font-black text-white uppercase tracking-[0.3em] leading-none">
+                Maquinsa <br>
+                <span class="text-orange-500 text-[9px] tracking-[0.4em]">S.A. de C.V.</span>
+            </p>
+        </div>
 
         <nav class="hidden md:flex items-center gap-10 text-xs font-extrabold text-white uppercase tracking-[0.2em]">
             <a href="index.html" class="hover:text-orange-500 transition">Inicio</a>
@@ -65,19 +75,25 @@
 
         <button id="btn-menu" class="md:hidden text-white p-2">
             <i data-lucide="menu" class="w-8 h-8"></i>
-        </button>
-    </div>
+        </button> 
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800 absolute w-full left-0 shadow-2xl">
 
-    <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800 absolute w-full left-0 shadow-2xl">
         <div class="flex flex-col p-8 gap-6 font-bold text-white uppercase tracking-widest text-sm">
+
             <a href="index.html" class="hover:text-orange-500">Inicio</a>
+
             <a href="servicios.html" class="hover:text-orange-500">Equipos</a>
+
             <a href="nosotros.html" class="hover:text-orange-500">Trayectoria</a>
+
             <a href="ubicacion.html" class="text-orange-500">Cobertura</a>
+
         </div>
     </div>
-</header><br><br>
+    </header>
 
+<br><br><br>
  <section class="py-16 bg-gray-700 text-white">
     <div class="max-w-4xl mx-auto text-center px-4">
         <h2 class="text-3xl font-bold mb-8">Nuestra Zona de Cobertura</h2>
@@ -141,13 +157,28 @@
                 </iframe>
             </div>
         </div>
+    </div><br>
+    <div class="bg-gray-900 p-6 border-l-4 border-orange-600 shadow-xl group hover:bg-gray-800 transition-all duration-300" data-aos="fade-up">
+    <div class="flex flex-col gap-2">
+        <span class="text-[10px] font-black text-orange-500 uppercase tracking-[0.3em]">
+            Contacto Institucional
+        </span>
+        
+        <div class="flex items-center gap-4">
+            <i data-lucide="mail" class="w-5 h-5 text-gray-500 group-hover:text-orange-500 transition-colors"></i>
+            
+            <a href="mailto:contacto@maquinsa.com.mx" class="text-lg md:text-xl font-bold text-white hover:text-orange-500 transition-colors tracking-tight">
+                ventas.maquinsa@outlook.com
+            </a>
+        </div>
     </div>
+</div>
 </section>
 
 
 
     <footer class="py-8 bg-orange-100 text-gray-900 text-center text-sm">
-        &copy; Todos los derechos reservados para Maquinsa. 2026
+        &copy; Todos los derechos reservados para Maquinsa SA de CV. 2026
     </footer>
 
     <a href="https://wa.me/528444649290" target="_blank" 

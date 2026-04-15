@@ -48,11 +48,21 @@
 </head>
 <body class="text-gray-800 antialiased font-sans">
 
-    <header class="fixed w-full bg-gray-900/95 backdrop-blur-md z-50 shadow-2xl border-b-4 border-orange-600">
+<header class="fixed w-full bg-gray-700/60 backdrop-blur-md z-50 shadow-2xl border-b-4 border-orange-600">
     <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-        <a href="index.html" class="flex items-center">
-            <img src="assets/logo-cliente-1.png" alt="Logo Maquinsa" class="h-12 w-auto">
-        </a>
+        
+        <div class="flex items-center gap-4">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logo-cliente-1.png" alt="Logo Maquinsa" class="h-12 w-auto">
+            </a>
+            
+            <div class="hidden sm:block h-8 w-[2px] bg-orange-600/50"></div>
+            
+            <p class="hidden lg:block text-[11px] font-black text-white uppercase tracking-[0.3em] leading-none">
+                Maquinsa <br>
+                <span class="text-orange-500 text-[9px] tracking-[0.4em]">S.A. de C.V.</span>
+            </p>
+        </div>
 
         <nav class="hidden md:flex items-center gap-10 text-xs font-extrabold text-white uppercase tracking-[0.2em]">
             <a href="index.html" class="hover:text-orange-500 transition">Inicio</a>
@@ -65,18 +75,23 @@
 
         <button id="btn-menu" class="md:hidden text-white p-2">
             <i data-lucide="menu" class="w-8 h-8"></i>
-        </button>
-    </div>
+        </button> 
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800 absolute w-full left-0 shadow-2xl">
 
-    <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800 absolute w-full left-0 shadow-2xl">
         <div class="flex flex-col p-8 gap-6 font-bold text-white uppercase tracking-widest text-sm">
+
             <a href="index.html" class="hover:text-orange-500">Inicio</a>
+
             <a href="servicios.html" class="hover:text-orange-500">Equipos</a>
+
             <a href="nosotros.html" class="hover:text-orange-500">Trayectoria</a>
+
             <a href="ubicacion.html" class="text-orange-500">Cobertura</a>
+
         </div>
     </div>
-</header>
+    </header>
 
     <section class="py-24 bg-gray-50 px-6">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
@@ -145,10 +160,10 @@
 
 
     <footer class="py-8 bg-orange-100 text-gray-900 text-center text-sm">
-        &copy; Todos los derechos reservados para Maquinsa. 2026
+        &copy; Todos los derechos reservados para Maquinsa SA de CV. 2026
     </footer>
 
-    <a href="https://wa.me/528444649290" target="_blank" 
+    <a href="https://wa.me/528442894042" target="_blank" 
    class="fixed bottom-6 right-6 bg-orange-600 text-white px-6 py-4 rounded-xl shadow-[0_10px_20px_rgba(238,128,36,0.3)] hover:bg-orange-700 hover:-translate-y-2 transition-all duration-300 z-[100] flex items-center gap-3 border-b-4 border-orange-800 group">
     
     <div class="relative">
